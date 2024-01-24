@@ -1,0 +1,216 @@
+.navigation-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top : 20px;
+    padding-bottom : 20px;
+    width: 20dvw;
+    height: 100dvh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Quicksand;
+    position: fixed;
+    z-index: 1;
+}
+.nav-links{
+    text-decoration: none; 
+    cursor: pointer;
+    color: #ffffff;
+    margin:0;
+}
+.nav-icons{
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+.left-navigation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.author-profile{
+    height: 130px;
+    width: 130px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+Link{
+    text-decoration: none;
+    color: white;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+    color: white;
+}
+.mid-navigation{
+    display: flex;
+    flex-direction: column ;
+    margin-top : 50px;
+    position: relative;
+    color: white;
+    align-items: center;
+}
+
+.mid-navigation-components{
+    display: flex;
+    margin-top: 3dvh;
+    margin-bottom: 3dvh;
+    align-items: center;
+}
+.mid-navigation-components .nav-text {
+    display: inline-block;
+}
+.mid-navigation-components-container::after{
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+.mid-navigation-components-container:hover::after{
+    width: 100%;
+    background-color: rgb(199, 3, 199);
+}
+.navigation-toggle-container{
+    left: -30dvw;
+    position: relative;
+}
+link{
+    text-decoration: none;
+    color: inherit;
+}
+@media only screen and (max-width : 1024px) {
+    .navigation-container{
+    font-size: 0.8rem;
+    }
+    .mid-navigation{
+    margin-top: 40px;
+    }
+    .mid-navigation-components{
+    margin-top: 3.5dvh;
+    margin-bottom: 3.5dvh;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .navigation-container{
+      font-size: 0.7rem;
+    }
+    .mid-navigation{
+      margin-top: 25px;
+    }
+    .mid-navigation-components{
+      margin-top: 3dvh;
+      margin-bottom: 3dvh;
+    }
+    .author-profile{
+        height: 100px;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .author-profile{
+        height: 90px;
+        width: 90px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width : 520px) {
+    .navigation-container{
+        background: inherit;
+        left : -110px;
+        position: absolute;
+    }
+    .left-navigation-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 110px;
+        margin-left: 20px;
+    }
+    .left-navigation-container-Ar_name{
+        margin-left: 5px;
+    }
+    .author-profile{
+        height: 50px;
+        width: 50px;
+    }
+    .mid-navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        left : 100px;
+        top : 90dvh;
+        margin: 0 auto; /* Center horizontally */
+        position: fixed;
+        background: rgb(255, 255, 255,0.1);
+        padding: 4px;
+        border-radius: 40px;
+        height: 30px;
+    }
+    .nav-icons{
+        filter:  drop-shadow(0px 0px 10px rgba(193, 23, 23, 3));
+    }
+    .mid-navigation-components-container::after{
+        display: none;
+    }
+    .mid-navigation-components .nav-text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .mid-navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        left : 80px;
+        top : 90dvh;
+        margin: 0 auto; /* Center horizontally */
+        position: fixed;
+        //background-color: purple;
+        border-radius: 40px;
+        height: 30px;
+    }
+    .left-navigation-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 125px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .mid-navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        left : 55px;
+        top : 90dvh;
+        margin: 0 auto; /* Center horizontally */
+        position: fixed;
+        //background-color: purple;
+        border-radius: 40px;
+        height: 30px;
+    }
+    .left-navigation-container{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 125px;
+        margin-left: 20px;
+    }
+}
