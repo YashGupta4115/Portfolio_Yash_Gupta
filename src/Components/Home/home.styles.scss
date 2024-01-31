@@ -1,5 +1,6 @@
 .home-page-container{
     display: flex;
+    background-color: #FCEDDA;
 }
 .home-container{
     display: flex;
@@ -18,7 +19,7 @@ p{
     display: flex;
     flex-direction: column;
     height: 20dvh;
-    color: white;
+    color: #3E2723;
     padding-left : 10px;
     padding-top : 10px;
     margin-top: 10px;
@@ -43,11 +44,11 @@ p{
     padding: 20px;
 }
 .bottom-home-grid-items{
-    background-color: black;
+    background-color:  #EE4E34;
     height: 60vh;
     font-size: 10px;
     text-align: center;
-    color: white;
+    color: #F5F5DC;
     border-radius: 8px;
     transition: all 0.5s ease;
 }
@@ -61,7 +62,7 @@ p{
     background-color: inherit;
 }
 .bottom-home-nested-grid-items{
-    background-color: black;
+    background-color:  #EE4E34;
     font-size: 10px;
     text-align: center;
     border-radius: 8px;
@@ -69,7 +70,7 @@ p{
     flex-direction: column  ;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #F5F5DC;
     transition: transform 0.5s ease;
 }
 .bottom-home-nested-grid-items:hover{

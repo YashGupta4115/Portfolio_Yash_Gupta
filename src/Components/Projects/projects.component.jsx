@@ -1,29 +1,36 @@
 import { Link } from 'react-router-dom';
 import Navigation from '../navigationBar/navigation.component';
+import vogue_variety_display from '../../assets/vogue-variety-high-resolution-logo_new.png';
+import youtube_clone_display from '../../assets/Youtube 2017 New Logo.jpg';
+import portfolio_diplay from '../../assets/Screenshot 2024-01-31 160235.png';
 import './projects.styles.scss';
 
 const projects = [
     {
-        projectTitle : 'project 1',
-        projectDesp : 'project desp',
+        projectDisplay : vogue_variety_display,
+        projectTitle : 'Vouge Variety',
+        projectDesp : 'E-Commerce Website Based on React',
         route : '/project1',
         id : '1'
     },
     {
-        projectTitle : 'project 2',
-        projectDesp : 'project desp',
+        projectDisplay : youtube_clone_display,
+        projectTitle : 'Youtube Clone',
+        projectDesp : 'YouTube Clone based on React',
         route : '/project2',
         id : '2'
     },
     {
-        projectTitle : 'project 3',
-        projectDesp : 'project desp',
+        projectDisplay : portfolio_diplay,
+        projectTitle : 'Porfolio',
+        projectDesp : 'A Portfolio Websote Based on React',
         route : '/project3',
         id : '3'
     },
     {
-        projectTitle : 'project 4',
-        projectDesp : 'project desp',
+        projectDisplay : portfolio_diplay,
+        projectTitle : 'Product Rental Application',
+        projectDesp : 'Applicaion based in JAVA GUI and DBMS',
         route : '/project4',
         id : '4'
     }
@@ -31,8 +38,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="projects-container" style={{backgroundImage: `url(${require('../../assets/backgroundImage.jpg')})`
-    }} >
+        <div className="projects-container">
             <Navigation/>
             <div className='project-items-container'>
                 <div className='project-items-heading'>
@@ -45,7 +51,7 @@ const Projects = () => {
                                 <Link key={item.id} to={item.route}>
                                     <div className='project-items'>
                                         <span className='projectImage-container'>
-                                            <img className="projectImage" alt={item.id} src={`https://robohash.org/${item.id}`}/>
+                                            <img className="projectImage" alt={item.id} src={item.projectDisplay}/>
                                         </span>
                                         <span className='projectTitle'>{item.projectTitle}</span>
                                         <span className='projectDesp'>{item.projectDesp}</span>

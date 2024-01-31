@@ -6,8 +6,8 @@
     padding-bottom : 20px;
     width: 20dvw;
     height: 100dvh;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #EE4E34;
+    color: #F5F5DC;
     font-family: Quicksand;
     position: fixed;
     z-index: 1;
@@ -15,7 +15,7 @@
 .nav-links{
     text-decoration: none; 
     cursor: pointer;
-    color: #ffffff;
+    color: #F5F5DC;
     margin:0;
 }
 .nav-icons{
@@ -33,21 +33,27 @@
     width: 130px;
     border-radius: 100px;
     object-fit: cover;
+    background-color: #F5F5DC;
 }
 Link{
     text-decoration: none;
-    color: white;
+    color: #F5F5DC;
+}
+.nav-links{
+    &.active{
+        width : 100%;
+    }
 }
 a:-webkit-any-link{
     text-decoration: none;
-    color: white;
+    color: #F5F5DC;
 }
 .mid-navigation{
     display: flex;
     flex-direction: column ;
     margin-top : 50px;
     position: relative;
-    color: white;
+    color: #F5F5DC;
     align-items: center;
 }
 
@@ -70,7 +76,7 @@ a:-webkit-any-link{
 }
 .mid-navigation-components-container:hover::after{
     width: 100%;
-    background-color: rgb(199, 3, 199);
+    background-color: #F5F5DC;
 }
 .navigation-toggle-container{
     left: -30dvw;
@@ -92,7 +98,6 @@ link{
     margin-bottom: 3.5dvh;
     }
 }
-
 @media only screen and (max-width : 768px) {
     .navigation-container{
       font-size: 0.7rem;
@@ -162,7 +167,6 @@ link{
         display: none;
     }
 }
-
 @media only screen and (max-width : 380px) {
     .mid-navigation{
         display: flex;
@@ -188,7 +192,6 @@ link{
         margin-left: 20px;
     }
 }
-
 @media only screen and (max-width : 320px) {
     .mid-navigation{
         display: flex;

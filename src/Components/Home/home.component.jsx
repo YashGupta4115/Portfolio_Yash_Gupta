@@ -4,8 +4,7 @@ import './home.styles.scss';
 
 const Home = ()=> {
     return (
-        <div className='home-page-container' style={{backgroundImage: `url(${require('../../assets/backgroundImage.jpg')})`
-    }} >
+        <div className='home-page-container'>
             <Navigation/>
             <div className="home-container" >
                 <div className='top-home-container'>

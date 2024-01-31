@@ -1,8 +1,5 @@
 import './navigation.styles.scss';
-// import { FaBars} from 'react-icons/fa';
-// import {HiX}  from 'react-icons/hi';
 // import { useState } from 'react';
-// // import { useEffect } from 'react';
 import author_profile from '../../assets/backgroundImage.jpg';
 import { GoHomeFill } from "react-icons/go";
 import { RiContactsFill } from "react-icons/ri";
@@ -13,9 +10,9 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
 
-    // const [ navBarToggle, setNavBarToggle] = useState(false)
+    // const [ navIconToggle, setNavIconToggle] = useState(false)
     // const NavigationToggleHandler = ()=>{
-    //     setNavBarToggle(!navBarToggle);
+    //     setNavIconToggle(!navIconToggle);
     // }
     return (
 

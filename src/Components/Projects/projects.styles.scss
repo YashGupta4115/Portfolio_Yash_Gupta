@@ -1,5 +1,6 @@
 .projects-container{
     display: flex;
+    background-color: #FCEDDA;
 }
 .project-items-container{
     right: -20dvw;
@@ -10,7 +11,7 @@
     display: flex;
     flex-direction: column;
     height: 20dvh;
-    color: white;
+    color: #3E2723;
     padding-left : 10px;
     padding-top : 10px;
     margin-top: 10px;
@@ -27,9 +28,12 @@
     padding: 20px;
 }
 .projectImage{
-    width: 35dvw;
+    width: 37.53dvw;
     height: 60dvh;
     position: relative;
+    object-fit: contain;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .projectTitle{
     font-family: Quicksand;
@@ -43,7 +47,7 @@
 }
 .project-items{
     height: 70dvh;
-    background-color: black;
+    background-color: #EE4E34;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
