@@ -37,3 +37,97 @@
     padding-left: 30px;
     width: 600px;
 }
+
+@media only screen and (max-width : 1025px) {
+    .about-container{
+        height: 100dvh;
+    }
+    .profile_picture{
+        height: 380px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .about-right-container-Description{
+        padding-left: 30px;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width : 913px) {
+    .about-items-components{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top : -100px;
+        position: relative;
+    }
+    .profile_picture{
+        height: 380px;
+        width: 400px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .about-right-container-Description{
+        padding: 0;
+        width: 650px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 821px) {
+    .about-right-container-Description{
+        padding: 0;
+        width: 580px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 769px) {
+    .about-items-components{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top : -50px;
+        position: relative;
+    }
+    .about-right-container-Description{
+        padding: 0;
+        width: 540px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 431px) {
+    .about-container{
+        height: 100dvh;
+    }
+    .about-items-heading{
+        font-size: 1.5rem;
+        position: relative;
+        right: -260px;
+        top : 10px;
+    }
+    .about-items-container{
+        height: 100dvh;
+        right: 0dvw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .profile_picture{
+        height: 250px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    .about-right-container-Description{
+        padding: 0;
+        width: 340px;
+        text-align: center;
+    }
+}
+
+
+
+
