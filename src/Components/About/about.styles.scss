@@ -1,9 +1,39 @@
 .about-container{
-    height: 100vh;
-    right: -25dvw;
-    background-color: #1E1E1E;
+    display: flex;
+    background-color: #FCEDDA;
 }
 .about-items-container{
+    height: 100dvh;
     right: -20dvw;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.about-items-heading{
+    display: flex;
+    flex-direction: column;
+    height: 20dvh;
+    color: #3E2723;
+    padding-left : 10px;
+    padding-top : 10px;
+    margin-top: 10px;
+    margin-left : 10px;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.about-items-components{
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.profile_picture{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+.about-right-container-Description{
+    padding-left: 30px;
+    width: 600px;
 }

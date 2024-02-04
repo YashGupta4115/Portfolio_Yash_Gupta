@@ -1,51 +1,103 @@
 .contact-container{
     display: flex;
-    flex-direction: row;
+    background-color: #FCEDDA;
 }
 
 .contact-items-container{
-    display: flex;
     height: 100dvh;
     right: -20dvw;
-    background-color: #1E1E1E;
-    align-items: center;
-    color : white;
     position: relative;
-}
-.general-container{
-    height: 40vh;
-    width: 300px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.contact-container-heading{
-    font-size: 30px;
-    font-weight: 400;
-}
-.contact-container-desciption{
-    font-size: 20px;
-}
-.phone-contact{
-    background-color: grey;
     display: flex;
     flex-direction: column;
+    font-family: Quicksand;
+}
+.contact-item-heading{
+    display: flex;
+    flex-direction: column;
+    height: 20dvh;
+    color: #3E2723;
+    padding-left : 10px;
+    padding-top : 10px;
+    margin-top: 10px;
+    margin-left : 10px;
+    font-weight: 500;
+    font-size: 3rem;
+}
+.contact-items-components{
+    display: flex;
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
+    margin : 0 auto;
     justify-content: center;
-    align-items: center;
-    border-radius: 40px;   
+}
+.contact-left-component{
+    display: flex;
+    flex-direction: column;
+    margin : 0 auto;
+    justify-content: center;
+    //padding-top: 30px;
+    position: relative;
+    top : -50px;
 }
 .email-contact{
-    background-color: grey;  
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
-    justify-content: center;
+    display: flex;
 }
-.address-contact{
-    background-color: grey;
-    border-radius: 40px;
+.phone-contact{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+}
+.contact-button{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width : 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EE4E34;
+    color : #F5F5DC;
+    transition: 0.5s;
+    font-size: 1rem;
+    
+}
+.contact-button:hover{
+    opacity: .8;
+}
+.social-icons-container{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.icon-links{
+    padding-right : 15px;
+    color: #3E2723;
+}
+.icons{
+    color: #3E2723;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contact-right-component{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin : 0 auto;
     justify-content: center;
+    
+}
+.contact-right-input{
+    width: 340px;
+    height: 41px;
+    border-radius: 5px;
+    border-style: none;
+    margin-bottom: 20px;
+}
+.contact-right-textarea{
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Quicksand';
 }
