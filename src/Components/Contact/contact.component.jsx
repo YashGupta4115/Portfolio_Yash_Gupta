@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
+//import { ContactUs } from './contactUs.jsx';
 
 const ContactMe = ()=>{
     return (
@@ -19,7 +20,7 @@ const ContactMe = ()=>{
                             <a className='icon-links' href='https://github.com/YashGupta4115' target='_blank' rel="noreferrer"><FaGithub  size={30} className='icons'/></a>
                             <a className='icon-links' href='https://www.linkedin.com/in/yash-gupta-489922260/'  target='_blank' rel="noreferrer"><FaLinkedin size={30} className='icons'/></a>
                         </div>
-                        <a href='../../assets/Yash gupta-Resume.pdf' download><button className='contact-button'>Download Resume</button></a>
+                        <a href='../../assets/Yash gupta-Resume.pdf' download="Yash gupta-Resume.pdf"><button className='contact-button'>Download Resume</button></a>
                     </div>
                     <div className='contact-right-component'>
                         <input placeholder='Your Name'type='text' className='contact-right-input'/>
@@ -27,6 +28,7 @@ const ContactMe = ()=>{
                         <textarea placeholder='Your Message'className='contact-right-textarea'rows={8} cols={48}/>
                         <button className='contact-button'>Submit</button>
                     </div>
+                    {/* <ContactUs/> */}
                 </div>
             </div>     
         </div>
