@@ -5,9 +5,38 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import resume from '../../assets/Yash gupta-Resume.pdf';
-//import { ContactUs } from './contactUs.jsx';
+import { useState } from 'react';
 
 const ContactMe = ()=>{
+    const [username , setUsername] = useState('');
+    const [email , setEmail] = useState('');
+    const [msg , setMsg] = useState('');
+
+    const onUsernameChange = (event)=> {
+        const searchFieldString = event.target.value;
+        setUsername(searchFieldString);
+    }
+    const onEmailChange = (event)=> {
+        const searchFieldString = event.target.value;
+        setEmail(searchFieldString);
+    }
+    const onMsgChange = (event)=> {
+        const searchFieldString = event.target.value;
+        setMsg(searchFieldString);
+    }
+
+    const handleSubmit=(event)=>{
+        event.preventDefault();
+        console.log(username);
+        console.log(email);
+        console.log(msg);
+
+        setUsername('');
+        setEmail('');
+        setMsg('');
+
+    }
+    
     return (
         <div id="contact"className='contact-container'>
             <Navigation/>
@@ -23,13 +52,30 @@ const ContactMe = ()=>{
                         </div>
                         <a href={resume} download={resume}><button className='contact-button'>Download Resume</button></a>
                     </div>
-                    <div className='contact-right-component'>
-                        <input placeholder='Your Name'type='text' className='contact-right-input'/>
-                        <input type='email' placeholder='Your Email' className='contact-right-input'/>
-                        <textarea placeholder='Your Message'className='contact-right-textarea'rows={8} cols={48}/>
-                        <button className='contact-button'>Submit</button>
+                    <div className='contact-right-component-container'>
+                        <form className='contact-right-component' onSubmit={handleSubmit}>
+                            <input 
+                                placeholder='Your Name'
+                                type='text' 
+                                className='contact-right-input'
+                                value={username}
+                                onChange={onUsernameChange}/>
+                            <input 
+                                type='email' 
+                                placeholder='Your Email' 
+                                className='contact-right-input'
+                                value={email}
+                                onChange={onEmailChange}/>
+                            <textarea 
+                                placeholder='Your Message'
+                                className='contact-right-textarea'
+                                rows={8} 
+                                cols={48}
+                                value={msg}
+                                onChange={onMsgChange}/>
+                            <button className='contact-button'>Leave A Message !</button>
+                        </form>
                     </div>
-                    {/* <ContactUs/> */}
                 </div>
             </div>     
         </div>

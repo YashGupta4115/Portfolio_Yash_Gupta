@@ -94,18 +94,22 @@ p{
         gap: 10px;
         grid-template-columns: auto;
     }
+    .bottom-home-nested-container{
+            gap: 5px;
+            height: 500px;
+        }
     .bottom-home-grid-item{
-        height: 60dvh;  
+        height: 500px;  
     }
 }
 
 @media only screen and (max-width: 700px) {
     .bottom-home-nested-container{
         gap: 4px;
-        height: 40dvh;
+        height: 350px;
     }
     .bottom-home-grid-item{
-        height: 40dvh;  
+        height: 350px;  
     }
     .bottom-home-container{
         gap : 8px;
@@ -138,14 +142,14 @@ p{
     }
     .bottom-home-nested-container{
         gap: 5px;
-        height: 33dvh;
+        height: 300px;
     }
     .bottom-home-container{
         gap: 5px;
         grid-template-columns: auto;
     }
     .bottom-home-grid-item{
-        height: 33dvh;  
+        height: 300px;  
     }
     .top-home-container{
         text-align: right;
@@ -168,10 +172,10 @@ p{
     }
     .bottom-home-nested-container{
         gap: 5px;
-        height: 35dvh;
+        height: 290px;
     }
     .bottom-home-grid-item{
-        height: 35dvh;  
+        height: 280px;  
     }
     .bottom-home-nested-grid-heading{
         font-size: 0.8rem;
@@ -181,27 +185,6 @@ p{
     }
 }
 
-@media only screen and (max-width: 320px) {
-    .top-home-container-heading{
-        font-size: 1rem;
-    }
-    .top-home-container{
-        margin-bottom: 5px;
-    }
-    .bottom-home-nested-container{
-        gap: 5px;
-        height: 30dvh;
-    }
-    .bottom-home-grid-item{
-        height: 30dvh;  
-    }
-    .bottom-home-nested-grid-heading{
-        font-size: 0.8rem;
-    }
-    .bottom-home-nested-grid-description{
-        font-size: 0.3rem;
-    }
-}
 @media only screen and (max-width: 281px) {
     .top-home-container-heading{
         font-size: 0.9rem;
@@ -214,10 +197,10 @@ p{
     }
     .bottom-home-nested-container{
         gap: 5px;
-        height: 30dvh;
+        height: 230px;
     }
     .bottom-home-grid-item{
-        height: 30dvh;  
+        height: 220px;
     }
     .bottom-home-nested-grid-heading{
         font-size: 0.8rem;
