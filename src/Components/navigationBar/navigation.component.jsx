@@ -1,6 +1,6 @@
 import './navigation.styles.scss';
 // import { useState } from 'react';
-import author_profile from '../../assets/backgroundImage.jpg';
+import author_profile from '../../assets/profile-pic.png';
 import { GoHomeFill } from "react-icons/go";
 import { RiContactsFill } from "react-icons/ri";
 import { SiAboutdotme } from "react-icons/si";
@@ -26,7 +26,7 @@ const Navigation = () => {
                     </div>
                     <div className='left-navigation-container-Ar_name'>
                         <Link to='/about'>
-                            Yash Gupta
+                            <span className='user-name'>Yash Gupta</span>
                         </Link>
                     </div>    
             </div>

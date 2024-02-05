@@ -3,7 +3,7 @@ import Navigation from '../navigationBar/navigation.component';
 import './home.styles.scss';
 
 const Home = ()=> {
-    return (
+    return (  
         <div className='home-page-container'>
             <Navigation/>
             <div className="home-container" >

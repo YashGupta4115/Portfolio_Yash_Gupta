@@ -1,6 +1,6 @@
 import Navigation from '../navigationBar/navigation.component';
 import './about.styles.scss';
-import profile from '../../assets/profile.png';
+import profile from '../../assets/profile-pic2.png';
 
 const About = () => {
     return(
