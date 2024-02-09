@@ -10,7 +10,7 @@ const projects = [
         projectDisplay : vogue_variety_display,
         projectTitle : 'Vouge Variety',
         projectDesp : 'E-Commerce Website Based on React',
-        route : '/project1',
+        route : 'https://voguevariety.netlify.app/',
         id : '1'
     },
     {
@@ -24,7 +24,7 @@ const projects = [
         projectDisplay : portfolio_diplay,
         projectTitle : 'Porfolio',
         projectDesp : 'A Portfolio Websote Based on React',
-        route : '/project3',
+        route : 'https://portfolio-yashgupta.netlify.app/',
         id : '3'
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
                     {
                         projects.map((item)=> {
                             return (
-                                <Link key={item.id} to={item.route}>
+                                <Link key={item.id} to={item.route} target='_blank'>
                                     <div className='project-items'>
                                         <span className='projectImage-container'>
                                             <img className="projectImage" alt={item.id} src={item.projectDisplay}/>

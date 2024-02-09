@@ -18,7 +18,7 @@
     margin-left : 10px;
     font-family: Quicksand;
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 3rem;    
 }
 
 .projects-inside-container{
@@ -85,12 +85,11 @@
         width: 100dvw;
     }
     .project-items-heading{
-        margin-bottom: 10px;
-        font-size: 1.3rem;
+        font-size: 2rem;
+        top : 1dvh;
         text-align: right;
-        height: 15dvh;
-        margin-right: 20px;
-        padding-top: 10px;
+        right: 5dvw;
+        position: relative;
     }
     .projects-inside-container{
         gap: 10px;
@@ -111,12 +110,11 @@
         width: 100dvw;
     }
     .project-items-heading{
-        margin-bottom: 10px;
-        font-size: 1.3rem;
+        font-size: 2rem;
+        top : 1dvh;
         text-align: right;
-        height: 15dvh;
-        margin-right: 20px;
-        padding-top: 10px;
+        right: 5dvw;
+        position: relative;
     }
     .projects-inside-container{
         gap: 10px;
@@ -137,12 +135,11 @@
         left: -6px;
     }
     .project-items-heading{
-        margin-bottom: 10px;
         font-size: 1.3rem;
+        top : 2dvh;
         text-align: right;
-        height: 15dvh;
-        margin-right: 20px;
-        padding-top: 10px;
+        right: 5dvw;
+        position: relative;
     }
     .projects-inside-container{
         gap: 10px;

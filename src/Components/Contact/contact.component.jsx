@@ -41,7 +41,7 @@ const ContactMe = ()=>{
         <div id="contact"className='contact-container'>
             <Navigation/>
             <div className='contact-items-container'>
-                <div className='contact-item-heading'>Contact Me</div>
+                <div className='page-heading'>Contact Me</div>
                 <div className='contact-items-components'>
                     <div className='contact-left-component'>
                         <span className='email-contact'><IoIosMail size={30}  className='icons'/>yashguptayashu2003@gmail.com</span>

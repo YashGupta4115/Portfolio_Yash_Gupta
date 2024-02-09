@@ -52,6 +52,12 @@ p{
     border-radius: 8px;
     transition: all 0.5s ease;
 }
+.bottom-home-grid-item{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 40px;
+}
 .bottom-home-grid-item:hover{
     transform: translateY(-10px);
 }
@@ -121,13 +127,18 @@ p{
         transform: translateY(-5px);
     }
 }
+
 @media only screen and (max-width : 520px) {
     .top-home-container{
         height: 15dvh;
         margin-bottom: 20px;
     }
     .top-home-container-heading{
-        font-size: 1.5rem;
+        font-size: 1rem;
+        top : 0.5dvh;
+        text-align: right;
+        right: -2dvw;
+        position: relative;
     }
     .home-container{
         position: relative;
@@ -138,7 +149,8 @@ p{
         font-size: 1rem;
     }
     .top-home-container-description{
-        font-size: 0.7rem;
+        margin-top: 10px;
+        font-size: 0.9rem;
     }
     .bottom-home-nested-container{
         gap: 5px;
@@ -165,7 +177,11 @@ p{
         margin-bottom: 10px;
     }
     .top-home-container-heading{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+        top : 1dvh;
+        text-align: right;
+        right: -2dvw;
+        position: relative;
     }
     .top-home-container-description{
         font-size: 0.6rem;
@@ -187,7 +203,11 @@ p{
 
 @media only screen and (max-width: 281px) {
     .top-home-container-heading{
-        font-size: 0.9rem;
+        font-size: 1rem;
+        top : 2dvh;
+        text-align: right;
+        right: -2dvw;
+        position: relative;
     }
     .top-home-container-description{
         font-size: 0.5rem;

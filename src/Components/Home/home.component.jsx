@@ -22,7 +22,7 @@ const Home = ()=> {
                             <span className='bottom-home-nested-grid-description'>Expert</span>
                         </div>
                         <div className='bottom-home-nested-grid-items'>
-                                <span className='bottom-home-nested-grid-heading'>4</span>
+                                <span className='bottom-home-nested-grid-heading'>5+</span>
                                 <span className='bottom-home-nested-grid-description'>Projects</span>
                                 <Link  className="bottom-home-nested-grid-description" to='/projects'>View all</Link>
                         </div>
@@ -32,10 +32,18 @@ const Home = ()=> {
                         </div>
                     </div>
                     <div className='bottom-home-grid-items bottom-home-grid-item'>
-                        <span>This is test sentence </span>
+                        <span>Data Analyst with Machine Learning </span>
+                        <span>10+ Data Prediction Projects</span>
+                        <span>Data Pre-Processing and Data Mining</span>
                     </div>
-                    <div className='bottom-home-grid-items bottom-home-grid-item'>Component - 3</div>
-                    <div className='bottom-home-grid-items bottom-home-grid-item'>Component - 4</div>
+                    <div className='bottom-home-grid-items bottom-home-grid-item'>
+                        <span>Team Collaborater</span>
+                        <span>Fluent Comminication</span>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div className='bottom-home-grid-items bottom-home-grid-item'>
+                        <span>OnGoing CGPA : 8.63</span>
+                    </div>
                 </div>
             </div>
         </div>
