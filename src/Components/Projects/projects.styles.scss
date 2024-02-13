@@ -52,6 +52,12 @@
     display: flex;
     flex-direction: column;
 }
+a.project-items-link{
+    transition: all 0.5s ease;
+}
+a.project-items-link:hover {
+    transform: translateY(-8px);
+}
 @media only screen and (max-width: 1025px){
     .projects-inside-container{
         gap: 12px;
@@ -96,10 +102,10 @@
         grid-template-columns: auto;
     }
     .project-items{
-        height: 320px;  
+        height: 320px;
     }
-    .project-items:hover{
-        transform: translateY(-10px);
+    .project-items-link:hover{
+        transform: scale(1.05);
     }
     .projectImage{
         height: 270px;

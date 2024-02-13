@@ -3,6 +3,7 @@ import Navigation from '../navigationBar/navigation.component';
 import vogue_variety_display from '../../assets/vogue-variety-high-resolution-logo_new.png';
 import youtube_clone_display from '../../assets/Youtube 2017 New Logo.jpg';
 import portfolio_diplay from '../../assets/Screenshot 2024-01-31 160235.png';
+import rentalProject_display from '../../assets/Rental Project SS.png';
 import './projects.styles.scss';
 
 const projects = [
@@ -28,10 +29,10 @@ const projects = [
         id : '3'
     },
     {
-        projectDisplay : portfolio_diplay,
+        projectDisplay : rentalProject_display,
         projectTitle : 'Product Rental Application',
         projectDesp : 'Applicaion based in JAVA GUI and DBMS',
-        route : '/project4',
+        route : 'https://github.com/YashGupta4115/Product_Rental_System/tree/master',
         id : '4'
     }
 ]
@@ -48,7 +49,7 @@ const Projects = () => {
                     {
                         projects.map((item)=> {
                             return (
-                                <Link className='project-items' key={item.id} to={item.route} target='_blank'>
+                                <Link className='project-items-link' key={item.id} to={item.route} target='_blank'>
                                     <div className='project-items'>
                                         <span className='projectImage-container'>
                                             <img className="projectImage" alt={item.id} src={item.projectDisplay}/>
