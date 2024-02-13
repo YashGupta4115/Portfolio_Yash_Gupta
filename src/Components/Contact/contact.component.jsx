@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
-import resume from '../../assets/Yash gupta-Resume.pdf';
+import resume from '../../assets/Yash Gupta-Resume.pdf';
 import { useState } from 'react';
 
 const ContactMe = ()=>{

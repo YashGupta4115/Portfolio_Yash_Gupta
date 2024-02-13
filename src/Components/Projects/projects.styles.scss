@@ -98,6 +98,9 @@
     .project-items{
         height: 320px;  
     }
+    .project-items:hover{
+        transform: translateY(-10px);
+    }
     .projectImage{
         height: 270px;
         width: 90dvw;

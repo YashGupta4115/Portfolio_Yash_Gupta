@@ -17,7 +17,7 @@ const projects = [
         projectDisplay : youtube_clone_display,
         projectTitle : 'Youtube Clone',
         projectDesp : 'YouTube Clone based on React',
-        route : '/project2',
+        route : 'https://youtubeclonebyyashgupta.netlify.app/',
         id : '2'
     },
     {
@@ -48,7 +48,7 @@ const Projects = () => {
                     {
                         projects.map((item)=> {
                             return (
-                                <Link key={item.id} to={item.route} target='_blank'>
+                                <Link className='project-items' key={item.id} to={item.route} target='_blank'>
                                     <div className='project-items'>
                                         <span className='projectImage-container'>
                                             <img className="projectImage" alt={item.id} src={item.projectDisplay}/>

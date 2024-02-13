@@ -42,7 +42,8 @@ const Home = ()=> {
                         <span>Problem Solving</span>
                     </div>
                     <div className='bottom-home-grid-items bottom-home-grid-item'>
-                        <span>OnGoing CGPA : 8.63</span>
+                        <span>Certificates</span>
+                        <Link  className="bottom-home-nested-grid-description" to='/certificates'>View all</Link>
                     </div>
                 </div>
             </div>
