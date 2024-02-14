@@ -6,6 +6,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import resume from '../../assets/Yash Gupta.pdf';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactMe = ()=>{
     const [username , setUsername] = useState('');
@@ -27,13 +28,32 @@ const ContactMe = ()=>{
 
     const handleSubmit=(event)=>{
         event.preventDefault();
-        console.log(username);
-        console.log(email);
-        console.log(msg);
+        const serviceId = 'service_Porfolio';
+        const templateId='template_lfmjmg7';
+        const publicKey='QzFNUwH8g5Uub6Ou4';
 
-        setUsername('');
-        setEmail('');
-        setMsg('');
+        const temptParams = {
+            from_name : username,
+            from_email: email,
+            to_name: 'Yash Gupta',
+            message: msg,
+        };
+
+        emailjs.send(serviceId,templateId,temptParams,publicKey)
+        .then((response)=>{
+            console.log('Email sent!');
+            alert("We have received your message. We'll reply soon!!");
+            setUsername('');
+            setEmail('');
+            setMsg('');
+        })
+        .catch((error) => {
+            console.log('Error sending mail!');
+            alert("There was an error sending email. Pls retry!");
+        });
+
+
+        
 
     }
     
