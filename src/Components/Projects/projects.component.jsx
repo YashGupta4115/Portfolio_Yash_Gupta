@@ -4,6 +4,7 @@ import vogue_variety_display from '../../assets/vogue-variety-high-resolution-lo
 import youtube_clone_display from '../../assets/Youtube 2017 New Logo.jpg';
 import portfolio_diplay from '../../assets/Screenshot 2024-01-31 160235.png';
 import rentalProject_display from '../../assets/Rental Project SS.png';
+import mlProjects_display from '../../assets/Predictive analysis.png';
 import './projects.styles.scss';
 import {motion} from 'framer-motion'
 
@@ -14,7 +15,6 @@ const projects = [
         projectDesp : 'E-Commerce Website Based on React',
         route : 'https://voguevariety.netlify.app/',
         id : '1',
-        direction : 'x',
         initial : -1000,
         duration : 0.5,
     },
@@ -24,7 +24,6 @@ const projects = [
         projectDesp : 'YouTube Clone based on React',
         route : 'https://youtubeclonebyyashgupta.netlify.app/',
         id : '2',
-        direction : 'y',
         initial : 1000,
         duration : 0.5,
     },
@@ -34,7 +33,6 @@ const projects = [
         projectDesp : 'A Portfolio Websote Based on React',
         route : 'https://portfolio-yashgupta.netlify.app/',
         id : '3',
-        direction : 'x',
         initial : 1000,
         duration : 0.3,
     },
@@ -44,7 +42,15 @@ const projects = [
         projectDesp : 'Applicaion based in JAVA GUI and DBMS',
         route : 'https://github.com/YashGupta4115/Product_Rental_System/tree/master',
         id : '4',
-        direction : 'y',
+        initial : -1000,
+        duration : 0.5,
+    },
+    {
+        projectDisplay : mlProjects_display,
+        projectTitle : 'Predictive Analysis',
+        projectDesp : 'Multiple ML Projects',
+        route : 'https://github.com/YashGupta4115/Machine-Learning-and-Data-Science-Projects',
+        id : '5',
         initial : -1000,
         duration : 0.5,
     }
