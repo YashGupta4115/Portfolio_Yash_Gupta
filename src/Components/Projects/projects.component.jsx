@@ -5,6 +5,7 @@ import youtube_clone_display from '../../assets/Youtube 2017 New Logo.jpg';
 import portfolio_diplay from '../../assets/Screenshot 2024-01-31 160235.png';
 import rentalProject_display from '../../assets/Rental Project SS.png';
 import './projects.styles.scss';
+import {motion} from 'framer-motion'
 
 const projects = [
     {
@@ -12,28 +13,40 @@ const projects = [
         projectTitle : 'Vouge Variety',
         projectDesp : 'E-Commerce Website Based on React',
         route : 'https://voguevariety.netlify.app/',
-        id : '1'
+        id : '1',
+        direction : 'x',
+        initial : -1000,
+        duration : 0.5,
     },
     {
         projectDisplay : youtube_clone_display,
         projectTitle : 'Youtube Clone',
         projectDesp : 'YouTube Clone based on React',
         route : 'https://youtubeclonebyyashgupta.netlify.app/',
-        id : '2'
+        id : '2',
+        direction : 'y',
+        initial : 1000,
+        duration : 0.5,
     },
     {
         projectDisplay : portfolio_diplay,
         projectTitle : 'Porfolio',
         projectDesp : 'A Portfolio Websote Based on React',
         route : 'https://portfolio-yashgupta.netlify.app/',
-        id : '3'
+        id : '3',
+        direction : 'x',
+        initial : 1000,
+        duration : 0.3,
     },
     {
         projectDisplay : rentalProject_display,
         projectTitle : 'Product Rental Application',
         projectDesp : 'Applicaion based in JAVA GUI and DBMS',
         route : 'https://github.com/YashGupta4115/Product_Rental_System/tree/master',
-        id : '4'
+        id : '4',
+        direction : 'y',
+        initial : -1000,
+        duration : 0.5,
     }
 ]
 
@@ -42,21 +55,36 @@ const Projects = () => {
         <div className="projects-container">
             <Navigation/>
             <div className='project-items-container'>
-                <div className='project-items-heading'>
+                <motion.div 
+                    className='project-items-heading'
+                    initial={{ y: -100 }}
+                        animate={{ y:0 }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0, 1, 0.3, 0.4],
+                        }}
+                >
                     Projects
-                </div>
+                </motion.div>
                 <div className='projects-inside-container'>
                     {
                         projects.map((item)=> {
                             return (
                                 <Link className='project-items-link' key={item.id} to={item.route} target='_blank'>
-                                    <div className='project-items'>
+                                    <motion.div 
+                                        className='project-items'
+                                        initial={{x : item.initial}}
+                                        animate={{x : 0}}
+                                        transition={{
+                                            x : {duration : item.duration,ease: [0, 0, 0.3, 1]}
+                                        }}    
+                                    >
                                         <span className='projectImage-container'>
                                             <img className="projectImage" alt={item.id} src={item.projectDisplay}/>
                                         </span>
                                         <span className='projectTitle'>{item.projectTitle}</span>
                                         <span className='projectDesp'>{item.projectDesp}</span>
-                                    </div>
+                                    </motion.div>
                                 </Link>
                             )
                         })

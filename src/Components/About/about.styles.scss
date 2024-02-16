@@ -27,21 +27,59 @@
     padding-left: 30px;
     padding-top: 10px;
 }
+.about-items-container-right{
+    margin-left : 20px;
+}
 .profile_picture{
     height: 400px;
     width: 300px;
     object-fit: contain;
     border-radius: 10px;
+    position: relative;
+    top : -40px;
 }
 .about-right-container-Description{
     padding-left: 30px;
     width: 600px;
 }
+.skill-description-container{    
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap to the next line when there's not enough space */
+    max-width: 50dvw; /* Ensure it doesn't exceed the container's width */
+}
+.skill-item{
+    display: inline-block;
+    border-radius: 20px;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom :10px;
+    background-color: #EE4E34;
+    color: #FCEDDA;
+}
+.skill-heading{
+    font-size: 2rem;
+    color: #3E2723;
+}
 @media only screen and (max-width: 1025px){
     .about-right-container-Description{
         width: 400px;
     }
+    .skill-description-container{    
+        display: flex;
+        flex-wrap: wrap; /* Ensures items wrap to the next line when there's not enough space */
+        max-width: 40dvw; /* Ensure it doesn't exceed the container's width */
+    }
+    .skill-item{
+        display: inline-block;
+        border-radius: 20px;
+        padding: 8px;
+        margin-right: 10px;
+        margin-bottom :10px;
+        background-color: #EE4E34;
+        color: #FCEDDA;
+    }
 }
+
 @media only screen and (max-width: 913px){
     .about-items-components{
         display: flex;
@@ -64,15 +102,29 @@
     }
 }
 @media only screen and (max-width: 541px){
+    .about-container{
+        height: 100%;
+    }
     .profile_picture{
         height: 250px;
         width: 350px ;
+        position: relative;
+        top : 25px;
     }
-    .about-right-container-Description{
+    .skill-description{
+        width : 300px;
+    }
+    .skill-description-container{
         width: 380px;
+        position: relative;
+        top : 25px;
+        font-size: 0.4rem;
     }
 }
 @media only screen and (max-width: 431px){
+    .about-container{
+        height: 100%;
+    }
     .about-items-container{
         left : 11dvw;
     }
@@ -92,10 +144,13 @@
         width: 80dvw ;
     }
     .about-right-container-Description{
-        width: 80dvw;
+        width: 40dvw;
     }
 }
 @media only screen and (max-width: 281px){
+    .about-container{
+        height: 100%;
+    }
     .about-items-heading{
         font-size: 1.5rem;
         height: 20dvh;

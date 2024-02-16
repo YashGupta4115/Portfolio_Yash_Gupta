@@ -7,6 +7,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import resume from '../../assets/Yash Gupta.pdf';
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import {motion} from'framer-motion'
 
 const ContactMe = ()=>{
     const [username , setUsername] = useState('');
@@ -51,19 +52,32 @@ const ContactMe = ()=>{
             console.log('Error sending mail!');
             alert("There was an error sending email. Pls retry!");
         });
-
-
-        
-
     }
     
     return (
         <div id="contact"className='contact-container'>
             <Navigation/>
             <div className='contact-items-container'>
-                <div className='page-heading'>Contact Me</div>
+                <motion.div 
+                    className='page-heading'
+                    initial={{ y: -100 }}
+                        animate={{ y:0 }}
+                        transition={{
+                            duration: 0.5,
+                            ease: [0, 1, 0.3, 0.4],
+                        }}
+                >Contact Me
+                </motion.div>
                 <div className='contact-items-components'>
-                    <div className='contact-left-component'>
+                    <motion.div 
+                        className='contact-left-component'
+                        initial={{ x: -1000 }}
+                            animate={{ x:  0 }}
+                            transition={{
+                                duration: 0.5,
+                                ease: [0, 1, 0.3, 0.4],
+                            }}
+                    >
                         <span className='email-contact'><IoIosMail size={30}  className='icons'/>yashguptayashu2003@gmail.com</span>
                         <span className='phone-contact'><FaPhoneAlt size={30}  className='icons'/>6201461718</span>
                         <div className='social-icons-container'>
@@ -71,31 +85,42 @@ const ContactMe = ()=>{
                             <a className='icon-links' href='https://www.linkedin.com/in/yash-gupta-489922260/'  target='_blank' rel="noreferrer"><FaLinkedin size={30} className='icons'/></a>
                         </div>
                         <a href={resume} download={resume}><button className='contact-button'>Download Resume</button></a>
-                    </div>
-                    <div className='contact-right-component-container'>
+                    </motion.div>
+                    <motion.div 
+                        className='contact-right-component-container'
+                        initial={{ x: 1000 }}
+                            animate={{ x:  0 }}
+                            transition={{
+                                duration: 0.5,
+                                ease: [0, 1, 0.3, 0.4],
+                            }}
+                    >
                         <form className='contact-right-component' onSubmit={handleSubmit}>
                             <input 
                                 placeholder='Your Name'
                                 type='text' 
                                 className='contact-right-input'
                                 value={username}
+                                required
                                 onChange={onUsernameChange}/>
                             <input 
                                 type='email' 
                                 placeholder='Your Email' 
                                 className='contact-right-input'
                                 value={email}
-                                onChange={onEmailChange}/>
+                                onChange={onEmailChange}
+                                required/>
                             <textarea 
                                 placeholder='Your Message'
                                 className='contact-right-textarea'
                                 rows={8} 
                                 cols={48}
                                 value={msg}
-                                onChange={onMsgChange}/>
+                                onChange={onMsgChange}
+                                required/>
                             <button className='contact-button'>Leave A Message !</button>
                         </form>
-                    </div>
+                    </motion.div>
                 </div>
             </div>     
         </div>

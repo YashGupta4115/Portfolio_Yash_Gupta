@@ -6,9 +6,12 @@ import { RiContactsFill } from "react-icons/ri";
 import { SiAboutdotme } from "react-icons/si";
 import { GrProjects } from "react-icons/gr";
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 
 const Navigation = () => {
+    const isMobile = useMediaQuery({ query: '(max-width: 0px)' });
 
     // const [ navIconToggle, setNavIconToggle] = useState(false)
     // const NavigationToggleHandler = ()=>{
@@ -16,7 +19,15 @@ const Navigation = () => {
     // }
     return (
 
-    <div className="navigation-container">
+    <motion.div 
+        className="navigation-container"
+        initial = {isMobile ? {} :{x : -500}}
+        animate = {isMobile ? {} :{x : 0}}
+        transition={{
+            duration : 0.6,
+            ease : [0,0,0.3,0.4]
+        }}
+    >
         <div className="left-navigation">
             <div className="left-navigation-container">
                     <div className='left-navigaiton-container-Ar_profile'>
@@ -70,7 +81,7 @@ const Navigation = () => {
                 navBarToggle ? <HiX size={20}/> : <FaBars size={20}/>
             }
         </div> */}
-    </div>
+    </motion.div>
     )
 }
 export default Navigation;
