@@ -16,7 +16,7 @@ const projects = [
         route : 'https://voguevariety.netlify.app/',
         id : '1',
         initial : -1000,
-        duration : 0.5,
+        duration : 0.3,
     },
     {
         projectDisplay : youtube_clone_display,
@@ -25,7 +25,7 @@ const projects = [
         route : 'https://youtubeclonebyyashgupta.netlify.app/',
         id : '2',
         initial : 1000,
-        duration : 0.5,
+        duration : 0.4,
     },
     {
         projectDisplay : portfolio_diplay,
@@ -34,7 +34,7 @@ const projects = [
         route : 'https://portfolio-yashgupta.netlify.app/',
         id : '3',
         initial : 1000,
-        duration : 0.3,
+        duration : 0.4,
     },
     {
         projectDisplay : rentalProject_display,
@@ -43,7 +43,7 @@ const projects = [
         route : 'https://github.com/YashGupta4115/Product_Rental_System/tree/master',
         id : '4',
         initial : -1000,
-        duration : 0.5,
+        duration : 0.6,
     },
     {
         projectDisplay : mlProjects_display,
@@ -52,7 +52,7 @@ const projects = [
         route : 'https://github.com/YashGupta4115/Machine-Learning-and-Data-Science-Projects',
         id : '5',
         initial : -1000,
-        duration : 0.5,
+        duration : 0.3,
     }
 ]
 
@@ -82,7 +82,7 @@ const Projects = () => {
                                         initial={{x : item.initial}}
                                         animate={{x : 0}}
                                         transition={{
-                                            x : {duration : item.duration,ease: [0, 0, 0.3, 1]}
+                                            x : {duration : item.duration,ease: [0, 1, 0.3, 0.4]}
                                         }}    
                                     >
                                         <span className='projectImage-container'>

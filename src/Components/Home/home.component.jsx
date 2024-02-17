@@ -131,7 +131,7 @@ const Home = ()=> {
                         }}
                     >
                         <span>Certificates</span>
-                        <Link  className="bottom-home-nested-grid-description" to='/certificates'>View all</Link>
+                        <Link  className="bottom-home-nested-grid-description" to='https://github.com/YashGupta4115/Certificates' target='_blank'>View all</Link>
                     </motion.div>
                 </div>
             </div>
