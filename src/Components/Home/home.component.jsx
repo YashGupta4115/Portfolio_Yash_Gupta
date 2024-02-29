@@ -44,7 +44,7 @@ const Home = ()=> {
                                 scale: { duration: 0.1 },
                             }}
                         >
-                            <span className='bottom-home-nested-grid-heading'>100+</span>
+                            <span className='bottom-home-nested-grid-heading'>115+</span>
                             <span className='bottom-home-nested-grid-description'>DSA Problems</span>
                         </motion.div>
                         <motion.div 
