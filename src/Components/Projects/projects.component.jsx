@@ -5,6 +5,7 @@ import youtube_clone_display from '../../assets/Youtube 2017 New Logo.jpg';
 import portfolio_diplay from '../../assets/Screenshot 2024-01-31 160235.png';
 import rentalProject_display from '../../assets/Rental Project SS.png';
 import mlProjects_display from '../../assets/Predictive analysis.png';
+import magic_cards_display from '../../assets/magic_card.png';
 import './projects.styles.scss';
 import {motion} from 'framer-motion'
 
@@ -53,6 +54,15 @@ const projects = [
         id : '5',
         initial : -1000,
         duration : 0.3,
+    },
+    {
+        projectDisplay : magic_cards_display,
+        projectTitle : 'Magic Card Game',
+        projectDesp : 'React Based guess game',
+        route : '',
+        id : '6',
+        initial : -1000,
+        duration : 0.6,
     }
 ]
 
